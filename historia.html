@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A história do personagem — Lord of the Mysteries RPG">
+    <title>História — Nome do Personagem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/webp" href="img/PWC05_Black_Emperor_Pathway.webp">
+</head>
+
+<body>
+
+    <!-- Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Fog -->
+    <div class="fog-container">
+        <div class="fog-layer fog-1"></div>
+        <div class="fog-layer fog-2"></div>
+        <div class="fog-layer fog-3"></div>
+        <div class="fog-blob fog-blob-1"></div>
+        <div class="fog-blob fog-blob-2"></div>
+        <div class="fog-blob fog-blob-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="Emblema">
+            <span>Personagem</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html" class="active">História</a></li>
+            <li><a href="atributos.html">Ficha</a></li>
+        </ul>
+        <div class="nav-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-bg" style="background-image: url('img/Black_Emperor_Symbol2.webp');"></div>
+        <h1>História</h1>
+        <p class="page-subtitle">Os fragmentos do passado</p>
+    </header>
+
+    <!-- Introdução -->
+    <section class="section">
+        <div class="quote-block reveal">
+            <p>
+                Escreva aqui uma introdução narrativa sobre a história
+                do seu personagem. Como ele vivia antes de se tornar
+                um Beyonder, e o que mudou para sempre.
+            </p>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section">
+        <div class="section-header reveal">
+            <h2>Linha do Tempo</h2>
+            <div class="section-line"></div>
+            <p>A jornada pelas Sequências</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Origens</span>
+                    <h3>Título do Evento</h3>
+                    <p>
+                        Descreva a origem do personagem. De onde veio,
+                        como era sua vida antes do mundo Beyonder,
+                        e as primeiras pistas de que algo maior existia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">O Despertar</span>
+                    <h3>Título do Evento</h3>
+                    <p>
+                        O momento em que o personagem entrou em contato
+                        com o sobrenatural. A primeira poção, o primeiro
+                        ritual, ou o evento que revelou a verdade.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Sequência 9</span>
+                    <h3>Título do Evento</h3>
+                    <p>
+                        O primeiro passo como Beyonder. A ingestão da
+                        poção, os efeitos, a luta para "digerir" e as
+                        primeiras habilidades manifestadas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">Avanço</span>
+                    <h3>Título do Evento</h3>
+                    <p>
+                        Os avanços pelas Sequências. As provações enfrentadas,
+                        os rituais realizados, e as transformações sofridas
+                        ao longo do caminho.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <span class="timeline-date">O Presente</span>
+                    <h3>Situação Atual</h3>
+                    <p>
+                        Onde o personagem se encontra agora. Sua Sequência
+                        atual, seus objetivos, alianças, e os mistérios
+                        que ainda precisa desvendar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conexões -->
+    <section class="section">
+        <div class="section-header reveal">
+            <h2>Conexões</h2>
+            <div class="section-line"></div>
+            <p>Aliados, rivais e figuras do passado</p>
+        </div>
+
+        <div class="cards-grid" style="max-width: 1100px; margin: 0 auto;">
+            <div class="info-card reveal">
+                <h4>Nome do NPC</h4>
+                <span class="card-tag">Aliado</span>
+                <p>
+                    Breve descrição da relação com esta figura.
+                    Como se conheceram e qual papel ela desempenha.
+                </p>
+            </div>
+
+            <div class="info-card reveal">
+                <h4>Nome do NPC</h4>
+                <span class="card-tag">Rival</span>
+                <p>
+                    Outra figura importante. Pode ser inimigo, mentor,
+                    colega de organização ou outro Beyonder.
+                </p>
+            </div>
+
+            <div class="info-card reveal">
+                <h4>Nome do NPC</h4>
+                <span class="card-tag">Misterioso</span>
+                <p>
+                    Uma figura cujas intenções permanecem ocultas.
+                    Talvez ligada a um dos Pilares ou a uma organização secreta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="" class="footer-emblem">
+        <p>Ficha de Personagem — Lord of the Mysteries RPG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

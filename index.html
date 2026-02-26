@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha de Personagem — RPG Lord of the Mysteries">
+  <title>Nome do Personagem — Lord of the Mysteries RPG</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/webp" href="img/PWC05_Black_Emperor_Pathway.webp">
+</head>
+
+<body>
+
+  <!-- Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Fog -->
+  <div class="fog-container">
+    <div class="fog-layer fog-1"></div>
+    <div class="fog-layer fog-2"></div>
+    <div class="fog-layer fog-3"></div>
+    <div class="fog-blob fog-blob-1"></div>
+    <div class="fog-blob fog-blob-2"></div>
+    <div class="fog-blob fog-blob-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="Emblema">
+      <span>Personagem</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="atributos.html">Ficha</a></li>
+    </ul>
+    <div class="nav-hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-image-bg" style="background-image: url('img/Black_Emperor_Symbol2.webp');"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-emblem">
+        <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="Símbolo do Pathway">
+      </div>
+      <h1 class="hero-title">Nome do Personagem</h1>
+      <p class="hero-subtitle">Pathway · Sequência Atual</p>
+      <div class="hero-divider"></div>
+      <p class="hero-description">
+        Breve descrição do seu personagem. Quem é este Beyonder,
+        qual Pathway segue, e o que o levou a buscar a ascensão
+        através das Sequências. Edite livremente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ficha Rápida -->
+  <section class="section">
+    <div class="character-showcase reveal">
+      <div class="character-image-frame">
+        <img src="img/TencentVideo_-_04_THE_EMPEROR.webp" alt="Retrato do Personagem">
+      </div>
+      <div class="character-info">
+        <h3>Nome do Personagem</h3>
+        <p class="char-epithet">Origem · Pathway · Sequência</p>
+        <p>
+          Escreva aqui uma introdução narrativa sobre seu investigador.
+          Sua origem, como entrou em contato com o mundo Beyonder,
+          e o que o impulsiona a avançar pelas Sequências mesmo
+          sabendo dos riscos que isso representa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards de Navegação — Flip Cards -->
+  <section class="section">
+    <div class="section-header reveal">
+      <h2>Grimório</h2>
+      <div class="section-line"></div>
+      <p>Os registros do Beyonder</p>
+    </div>
+
+    <div class="summary-grid">
+      <!-- Card: História -->
+      <a href="historia.html" class="summary-card reveal">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="História">
+            <div class="card-front-label">
+              <h3>História</h3>
+              <span>Virar para ler</span>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">
+              <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="">
+            </div>
+            <h3>História</h3>
+            <p>
+              O passado deste Beyonder. As origens, os eventos que o
+              moldaram, e os mistérios que se revelaram ao longo do
+              caminho pela Sequência.
+            </p>
+            <span class="card-link">Ler mais →</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card: Ficha -->
+      <a href="atributos.html" class="summary-card reveal">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="img/TencentVideo_-_04_THE_EMPEROR.webp" alt="Ficha">
+            <div class="card-front-label">
+              <h3>Ficha & Atributos</h3>
+              <span>Virar para ver</span>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">
+              <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="">
+            </div>
+            <h3>Ficha & Atributos</h3>
+            <p>
+              Atributos primários e secundários, perícias, sequência
+              atual, origem, equipamentos e tudo que define as
+              capacidades deste investigador.
+            </p>
+            <span class="card-link">Ver ficha →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Citação -->
+  <section class="section">
+    <div class="quote-block reveal">
+      <p>
+        Coloque aqui uma citação marcante do seu personagem
+        ou uma frase que capture a essência da sua jornada
+        pelo mundo de Lord of the Mysteries.
+      </p>
+      <cite>— Nome do Personagem</cite>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="" class="footer-emblem">
+    <p>Ficha de Personagem — Lord of the Mysteries RPG</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

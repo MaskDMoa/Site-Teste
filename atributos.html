@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ficha completa do personagem — Atributos, Perícias, Sequência — Lord of the Mysteries RPG">
+    <title>Ficha — Nome do Personagem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/webp" href="img/PWC05_Black_Emperor_Pathway.webp">
+</head>
+
+<body>
+
+    <!-- Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Fog -->
+    <div class="fog-container">
+        <div class="fog-layer fog-1"></div>
+        <div class="fog-layer fog-2"></div>
+        <div class="fog-layer fog-3"></div>
+        <div class="fog-blob fog-blob-1"></div>
+        <div class="fog-blob fog-blob-2"></div>
+        <div class="fog-blob fog-blob-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="Emblema">
+            <span>Personagem</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="atributos.html" class="active">Ficha</a></li>
+        </ul>
+        <div class="nav-hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-bg" style="background-image: url('img/Black_Emperor_Symbol2.webp');"></div>
+        <h1>Ficha do Personagem</h1>
+        <p class="page-subtitle">Os pilares do Beyonder</p>
+    </header>
+
+    <!-- Informações Gerais -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Informações Gerais</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Nome</span>
+                        <span class="info-value">Nome do Personagem</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Origem</span>
+                        <span class="info-value">Sua Origem</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Pathway</span>
+                        <span class="info-value">Seu Pathway</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Sequência Atual</span>
+                        <span class="info-value">Sequência 9</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Tipo</span>
+                        <span class="info-value">Beyonder</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Posses Materiais</span>
+                        <span class="info-value">Definido pela Origem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atributos Primários -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Atributos Primários</h3>
+                <p class="attr-rule-note">
+                    Inicia com 0 em todos. Distribua 5 pontos. Máximo: 3 (Humano) / 5 (Beyonder sem resquícios de
+                    divindade).
+                </p>
+
+                <div class="primary-attrs-grid">
+                    <div class="primary-attr-card">
+                        <div class="primary-attr-value">0</div>
+                        <div class="primary-attr-name">Vigor</div>
+                        <div class="primary-attr-desc">Influencia PV e resistência</div>
+                    </div>
+                    <div class="primary-attr-card">
+                        <div class="primary-attr-value">0</div>
+                        <div class="primary-attr-name">Força</div>
+                        <div class="primary-attr-desc">Influencia Carga e dano físico</div>
+                    </div>
+                    <div class="primary-attr-card">
+                        <div class="primary-attr-value">0</div>
+                        <div class="primary-attr-name">Destreza</div>
+                        <div class="primary-attr-desc">Influencia Evasão e Movimentação</div>
+                    </div>
+                    <div class="primary-attr-card">
+                        <div class="primary-attr-value">0</div>
+                        <div class="primary-attr-name">Inteligência</div>
+                        <div class="primary-attr-desc">Influencia Perícias e treinamento</div>
+                    </div>
+                    <div class="primary-attr-card">
+                        <div class="primary-attr-value">0</div>
+                        <div class="primary-attr-name">Espiritualidade</div>
+                        <div class="primary-attr-desc">Influencia Energia Espiritual</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atributos Secundários -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Atributos Secundários</h3>
+
+                <div class="attr-bar-group">
+                    <div class="attr-bar-label">
+                        <span>Pontos de Vida (PV)</span>
+                        <span>00 / 00</span>
+                    </div>
+                    <div class="attr-bar">
+                        <div class="attr-bar-fill gold" data-value="80"></div>
+                    </div>
+                    <p class="attr-calc-note">Base: 10 + Vigor | Avanço: +3 + Vigor por sequência | ×2 a partir de Seq.
+                        7 e Seq. 4</p>
+                </div>
+
+                <div class="attr-bar-group">
+                    <div class="attr-bar-label">
+                        <span>Energia Espiritual (EE)</span>
+                        <span>00 / 00</span>
+                    </div>
+                    <div class="attr-bar">
+                        <div class="attr-bar-fill" data-value="65"></div>
+                    </div>
+                    <p class="attr-calc-note">Mesmo cálculo dos PV, mas baseado em Espiritualidade</p>
+                </div>
+
+                <div class="attr-bar-group">
+                    <div class="attr-bar-label">
+                        <span>Evasão (Ev)</span>
+                        <span>00</span>
+                    </div>
+                    <div class="attr-bar">
+                        <div class="attr-bar-fill" data-value="50"></div>
+                    </div>
+                    <p class="attr-calc-note">10 + Destreza | Sem bônus de sequência ou armadura</p>
+                </div>
+
+                <div class="attr-bar-group">
+                    <div class="attr-bar-label">
+                        <span>Movimentação (Mov)</span>
+                        <span>00m</span>
+                    </div>
+                    <div class="attr-bar">
+                        <div class="attr-bar-fill gold" data-value="55"></div>
+                    </div>
+                    <p class="attr-calc-note">8 + (2 × Destreza) metros por turno</p>
+                </div>
+
+                <div class="attr-bar-group">
+                    <div class="attr-bar-label">
+                        <span>Carga (Cg)</span>
+                        <span>00</span>
+                    </div>
+                    <div class="attr-bar">
+                        <div class="attr-bar-fill" data-value="45"></div>
+                    </div>
+                    <p class="attr-calc-note">6 + (2 × Força)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sequência / Avanço -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Progressão de Sequência</h3>
+                <p class="attr-rule-note">
+                    Sequências ímpares (exceto 9): +1 ponto de atributo primário.
+                    Seq. 7+: cálculos duplicam. Seq. 4+: duplicam novamente.
+                </p>
+
+                <div class="sequence-track">
+                    <div class="seq-node completed">
+                        <div class="seq-number">H</div>
+                        <div class="seq-label">Humano</div>
+                    </div>
+                    <div class="seq-connector completed"></div>
+                    <div class="seq-node active">
+                        <div class="seq-number">9</div>
+                        <div class="seq-label">Seq. 9</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node">
+                        <div class="seq-number">8</div>
+                        <div class="seq-label">Seq. 8</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node milestone">
+                        <div class="seq-number">7</div>
+                        <div class="seq-label">×2</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node">
+                        <div class="seq-number">6</div>
+                        <div class="seq-label">Seq. 6</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node">
+                        <div class="seq-number">5</div>
+                        <div class="seq-label">Seq. 5</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node milestone">
+                        <div class="seq-number">4</div>
+                        <div class="seq-label">×4</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node">
+                        <div class="seq-number">3</div>
+                        <div class="seq-label">Seq. 3</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node">
+                        <div class="seq-number">2</div>
+                        <div class="seq-label">Seq. 2</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node">
+                        <div class="seq-number">1</div>
+                        <div class="seq-label">Seq. 1</div>
+                    </div>
+                    <div class="seq-connector"></div>
+                    <div class="seq-node deity">
+                        <div class="seq-number">0</div>
+                        <div class="seq-label">Deidade</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perícias -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Perícias</h3>
+                <p class="attr-rule-note">
+                    Definidas pela Origem (10 pontos de treinamento).
+                    Pode treinar ½ Inteligência adicionais por avanço.
+                    Cada nível: +2 nos testes.
+                </p>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h4>Nome da Perícia</h4>
+                        <span class="card-tag">Nível: 0 | +0</span>
+                        <p>Descrição da perícia e como ela é usada pelo personagem.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome da Perícia</h4>
+                        <span class="card-tag">Nível: 0 | +0</span>
+                        <p>Outra perícia do personagem. Descreva sua importância e uso.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome da Perícia</h4>
+                        <span class="card-tag">Nível: 0 | +0</span>
+                        <p>Perícia definida pela origem ou treinada ao longo do caminho.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome da Perícia</h4>
+                        <span class="card-tag">Nível: 0 | +0</span>
+                        <p>Conhecimento que poucos possuem, talvez obtido de fontes ocultas.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome da Perícia</h4>
+                        <span class="card-tag">Nível: 0 | +0</span>
+                        <p>Habilidade que reflete o pathway e a experiência do investigador.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome da Perícia</h4>
+                        <span class="card-tag">Nível: 0 | +0</span>
+                        <p>Mais uma perícia relevante, moldada pela origem e pelos avanços.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipamentos / Itens -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Equipamentos & Itens</h3>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h4>Nome do Item</h4>
+                        <span class="card-tag">Equipamento</span>
+                        <p>Descrição do item e sua utilidade nas investigações.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome do Item</h4>
+                        <span class="card-tag">Artefato Selado</span>
+                        <p>Um artefato Beyonder com propriedades sobrenaturais. Descreva seus efeitos e riscos.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome do Item</h4>
+                        <span class="card-tag">Pessoal</span>
+                        <p>Item de valor sentimental ou utilitário que acompanha o personagem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades de Sequência -->
+    <section class="section">
+        <div class="attributes-container">
+            <div class="attr-section reveal">
+                <h3 class="attr-section-title">Habilidades de Sequência</h3>
+
+                <div class="cards-grid">
+                    <div class="info-card">
+                        <h4>Nome da Habilidade</h4>
+                        <span class="card-tag">Sequência 9</span>
+                        <p>Habilidade obtida ao avançar para esta sequência. Descreva seus efeitos e limitações.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Nome da Habilidade</h4>
+                        <span class="card-tag">Sequência 9</span>
+                        <p>Outra habilidade desta sequência. Pode incluir habilidades passivas ou ativas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citação -->
+    <section class="section">
+        <div class="quote-block reveal">
+            <p>
+                Uma citação que reflita a essência do personagem
+                como Beyonder e sua relação com o poder que carrega.
+            </p>
+            <cite>— Nome do Personagem</cite>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="img/PWC05_Black_Emperor_Pathway.webp" alt="" class="footer-emblem">
+        <p>Ficha de Personagem — Lord of the Mysteries RPG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
